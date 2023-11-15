@@ -21,7 +21,7 @@ typedef struct format
 	char *id;
 	int (*f)();
 } convert_match;
-
+int handle_format(const char *format, va_list args, int i, convert_match *m);
 int printf_pointer(va_list val);
 int printf_hex_aux(unsigned long int num);
 int printf_HEX_aux(unsigned int num);
